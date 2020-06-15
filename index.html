@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='keywords' content="laura, rodwell, portfolio, uwl, itmb, tech industy gold">
+    <meta name="description" content="E-portfolio card with important information">
+      <title> Laura's Home </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/66bb29c983.js"></script>
+   
+
+    <style>
+    /*STYLE FOR INDEX BG*/
+      body{
+        background: linear-gradient(100deg, #ab1a0a, #4eb1ba);
+        background-size: 400% 400%;
+        animation: background_gradient 7s ease infinite;
+      }
+      @keyframes background_gradient{
+        0%{background-position:0% 50%;}
+        50%{background-position:100% 50%;}
+        100%{background-position:0% 50%; }
+      }
+    </style>
+  </head>
+
+<body>
+                <!--NAV MENU-->
+  <nav>
+    <a href="index.html" class="logo">LSA</a>
+     <label for="btn" class="icon">
+       <span class="fa fa-bars"></span>
+     </label>
+     <input type="checkbox" id="btn">
+    <ul>
+     <li><a href="index.html"  class="current">Home</a></li>
+     <li>
+       <label for="btn-1" class="show">Profile</label>
+         <a href="#">Profile</a>
+           <input type="checkbox" id="btn-1">
+     <ul>
+       <li><a href="portfolio.html">About Me</a></li>
+       <li><a href="portfolio.html#skillsection">Skills</a></li>
+       <li><a href="portfolio.html#achieve">Achievements</a></li>
+     </ul>
+     </li>
+     <li>
+       <label for="btn-2" class="show">Reflections</label>
+         <a href="#">Reflections</a>
+         <input type="checkbox" id="btn-2">
+         <ul>
+           <li><a href="business.html">Business</a></li>
+           <li><a href="digital.html">Digital Identity</a></li>
+           <li><a href="database.html">Databases</a></li>
+         </ul>
+       </li>
+     <li><a href="contact.html">Contact</a></li>
+   </ul>
+ </nav>
+
+
+                          <!---PROFILE CARD--->
+<section class="box_container">
+<article class="box">
+    <img src="images/profile.jpg" alt="Profile image of website designer">
+      <div class="content">
+        <h1>Laura Rodwell</h1>
+        <h2>My Portfolio!</h2>
+        <p>University of West London</p>
+        <a href="portfolio.html">Profile</a>
+        <a href="Report.pdf">Report</a>
+        <a href="https://www.linkedin.com/in/laurarodwell/" class="fab fa-linkedin fa-lg"></a>
+        <a href="https://twitter.com/LsaRodwell" class="fab fa-twitter fa-lg"></a>
+        <a href="mailto:laura.rodwell@outlook.com" class="far fa-paper-plane fa-lg"></a>
+      </div>
+  </article>
+</section>
+
+                          <!---FOOTER--->
+<footer>
+  <a href="https://www.linkedin.com/in/laurarodwell/" class="fab fa-linkedin"></a>
+  <a href="https://twitter.com/LsaRodwell" class="fab fa-twitter"></a>
+  <a href = "mailto:laura.rodwell@outlook.com" class="far fa-paper-plane"></a>
+  <h2> This website designed and developed by Laura Rodwell &copy; 2020</h2>
+</footer>
+
+  </body>
+</html>

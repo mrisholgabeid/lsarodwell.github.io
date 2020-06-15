@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Database Reflective Journal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name='keywords' content="laura, rodwell, portfolio, uwl, itmb, tech industy gold">
+  <meta name="description" content="Weekly ">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/66bb29c983.js"></script>
+</head>
+
+<body>
+    <!---NAV MENU--->
+<nav>
+   <a href="index.html" class="logo">LSA</a>
+    <label for="btn" class="icon">
+      <span class="fa fa-bars"></span>
+    </label>
+    <input type="checkbox" id="btn">
+   <ul>
+    <li><a href="index.html" >Home</a></li>
+    <li>
+      <label for="btn-1" class="show">Profile</label>
+        <a href="#">Profile</a>
+          <input type="checkbox" id="btn-1">
+    <ul>
+      <li><a href="portfolio.html">About Me</a></li>
+      <li><a href="portfolio.html#skillsection">Skills</a></li>
+      <li><a href="portfolio.html#achieve">Achievements</a></li>
+    </ul>
+    </li>
+    <li>
+      <label for="btn-2" class="show">Reflections</label>
+        <a href="#" class="current">Reflections</a>
+        <input type="checkbox" id="btn-2">
+        <ul>
+          <li><a href="business.html">Business</a></li>
+          <li><a href="digital.html">DDI</a></li>
+          <li><a href="database.html"  class="current">ISDM</a></li>
+        </ul>
+      </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <main>
+    <!--INTRO TO PAGE / ABOVE THE FOLD-->
+    <section class="shortcut">
+      <h1 class="header">Information Systems & Databases</h1>
+      <p>The following are my weekly reflective journals for Information Systems & Databases and the content that has been covered over 10 weeks.</p> 
+      <a href="database.html#WK1" class="hover">Week 1</a>
+      <a href="database.html#WK2" class="hover">Week 2</a>
+      <a href="database.html#WK3" class="hover">Week 3</a>
+      <a href="database.html#WK4" class="hover">Week 4</a>
+      <a href="database.html#WK5" class="hover">Week 5</a>
+      <a href="database.html#WK6" class="hover">Week 6</a>
+      <a href="database.html#WK7" class="hover">Week 7</a>
+      <a href="database.html#WK8" class="hover">Week 8</a>
+      <a href="database.html#WK9" class="hover">Week 9</a>
+      <a href="database.html#WK10" class="hover">Week 10</a>
+    </section>
+
+    <button onclick="topFunction()" id="topbtn" title="Go to top">Top</button> <!--https://www.w3schools.com/howto/howto_js_scroll_to_top.asp-->
+
+
+    <!--TIMELINE-->
+  <section class="timeline">
+    <article class="container left">
+      <div class="reflective_content">
+        <a id="WK1"></a>
+        <h1>Week 1</h1>
+        <h2>04/02/20</h2>
+        <p>The first week was an introduction to databases. The predominate focus of the lecture was to look at the functions that are used in SQL. The lecturer covered a range of functions that could be used in SQL to retrieve information from a database. Reflecting on the lecture there was a lot of information that was difficult to retain. However, the seminar was helpful in supporting me to fully understand the use of the functions, with structed questions that gave me the opportunity to use and see the output of these. </p>
+        <p>There were a variety of functions that we looked at in the lecture, to name a few, initcap, lower, substr and replace. All functions which are used to pluck specific data from a database. In addition to this, the where clause was investigated which allows the retrieval of data based on a condition. The most important key factor that I took away from this lecture was that all attributes that are stored in the database are case sensitive, if written wrong will produce no output. I learnt a huge amount in this lecture and feel that given questions on the topic would be able to successfully answer them.</p>
+      </div>
+    </article>
+    <article class="container right">
+      <div class="reflective_content">
+        <a id="WK2"></a>
+        <h1>Week 2</h1>
+        <h2>11/02/20</h2>
+        <p>The learning aims of week 2 database module was to understand aggregate functions, the group by and having clause and to practise these to gain a further understanding.</p>
+        <p>There are multiple aggregate functions that can be used in SQL these use multiple row functions and return one result per group of rows that are processed. The main use for these are to summarise the data that is stored within the database to achieve the desired output. The functions that we covered were self-explanatory and therefore I learnt how to write the function within a SQL query. </p>
+        <p>The biggest lesson that I learnt for the group by rule was that any column name within the select clause must appear within the group by clause unless an aggregate function is being used.In addition, to this the lecture identified how to use the group by and having clause with the clauses that were taught within the last few lectures such as, where and order by.</p>
+      </div>
+    </article>
+    <article class="container left">
+      <div class="reflective_content">
+        <a id="WK3"></a>
+        <h1>Week 3</h1>
+        <h2>18/02/20</h2>
+        <p>The learning objectives for week three were to understand how to retrieve data from multiple tables, the joins that can be used within Oracle SQL, using subqueries and the SET operators. </p>
+        <p> There are multiple join operators that can be used within SQL to retrieve data from multiple tables, this is achieved by using the where clause to join the tables. An example of this is below:</p>
+        <p>SELECT ename, dname FROM emo, dept WHERE emp.deptno = dept.deptno; </p>
+        <p>I learnt that without using the join condition (last line) then due to the values being the same you would produce a cartesian product which is a combination of all the values in the specified tables. In addition to this, ambiguous columns error can also occur this is due to the columns having the same value and Oracle being confused in which column is wanting to be retrieved. In order to correct this duplicate column must state the table name throughout the query. </p>
+        <p>The aspect that I found most difficult was remembering the different values within the tables and the connections between the tables. I will resolve this by becoming more familiar with the tables and practising queries within Oracle. </p>
+      </div>
+    </article>
+    <article class="container right">
+      <div class="reflective_content">
+        <a id="WK4"></a>
+        <h1>Week 4</h1>
+        <h2>25/02/20</h2>
+        <p>This week’s lecture moved on from retrieving data and focused on entity relationship modelling (ER). Throughout the duration of the lecture I learn how to construct a ER diagram, identified the types of relationships and traps and how to convert a ER diagram to a table.</p>
+        <p>There are different components of an ER model, these include entities, occurrences and attributes, I found that identifying entities within a case study was the most difficult as there could be many are viable but potentially not relevant. There are two different types of attributes simple; those that cannot be divided into details and composite; those that have additional attributes such as Address. </p>
+        <p>In addition to this, we looked at naming relationships. In this section of the lecture, I found that the worked examples helped me understand the relationships that can be formed. However, I still found that creating and naming the relationships between entities was difficult and this is something that I can work on over the upcoming week. </p>
+      </div>
+    </article>
+    <article class="container left">
+      <div class="reflective_content">
+        <a id="WK5"></a>
+        <h1>Week 5</h1>
+        <h2>03/03/20</h2>
+        <p>The topic of this week was Normalisation, functional dependency, normal forms and denormalization. Functional dependency is a vital aspect in the topic of normalisation; it is where one attribute has no more than one value associated within the relationship. This concept at first confused me until we moved on to functional diagrams where I could physically see the relationship between the attributes. In addition to this, completing the activities within the lecture supported my understanding, this was because I was able to attempt the activity individually and it was then explained after a duration of time.</p>
+        <p>Normal forms was a concept that I understood quickly, it was explained in detail and I was able to apply this knowledge to worked examples. Further from this, the work in the seminar sessions helped solidify the knowledge gained. </p>
+        <p>From the lecture I learnt that normalisation is the principle of, each relation being a single entity and if more than one is involved in a single relation that a separate relation should be formed. Normalisation is a way of checking entity relationship modelling and typically is not used complete database work, due to its bottom-up design. </p>
+      </div>
+    </article>
+    <article class="container right">
+      <div class="reflective_content">
+        <a id="WK6"></a>
+        <h1>Week 6</h1>
+        <h2>10/03/20</h2>
+        <p>The learning objectives for week 6 database lecture was to understand how to create, delete, modify and apply constraints to tables as well as inserting, updating and deleting data and understand the purpose of views and their creation. </p>
+        <p>In the lecture vital details were covered on different aspects of creating a database table. There are several rules that must be followed for example, naming rules must be up to 30 characters and begin with a letter, no spaces and cannot include reserved words such as, SELECT and DISTINCT. In addition to this, basic syntax needs to be followed to ensure that the create table query works for example everything is stored within brackets and the value must be supported by a data type for example, number of VarChar2. </p>
+        <p>Constraints are also an important aspect as it validates the integrity of the data. Identifying primary keys, not null values and check constraints support this. Further from this, naming these constraints will allow for user friendly system. Making sure that the names of the constraint helps to identify issues when queries are run, and errors arise. All the information that has been discussed within the lecture I felt supported me in the seminar with the work that was completed. I need more practise on creating tables to solidify the knowledge and technique.</p>
+      </div>
+    </article>
+    <article class="container left">
+      <div class="reflective_content">
+        <a id="WK7"></a>
+        <h1>Week 7</h1>
+        <h2>17/03/20</h2>
+        <p>This week’s lecture looked at database design. The learning outcomes were to understand the lifecycle of a database, identify the conceptual, logical and physical designs as well as understanding the success factors that contribute to a design.</p>
+        <p>A database will go through 6 stages in the development life cycle. Going through an initial study which identities the scope, objectives and requirements of the database. Conceptual design constructs the model of information that is used in the physical appearance, this is achieved by identifying the entities. Logical database is the representation of the model and the final stage is testing where the viability and fine-tuning of the mode is executed. </p>
+        <p>The information that I have learnt I will use in completing and driving the group work. The group work currently has slow progress due to some collaboration issues that we have been having as a group. The work has enabled me to expand my knowledge and supports my understanding of the creation of databases.</p>
+      </div>
+    </article>
+    <article class="container right">
+      <div class="reflective_content">
+        <a id="WK8"></a>
+        <h1>Week 8</h1>
+        <h2>24/03/20</h2>
+        <p>Transaction management and concurrency control was the topic for week 8. The learning objectives for this week is to understand the support required for transactions, why concurrency control is needed and database recovery. </p>
+        <p>Concurrency control is concerned with managing concurrency access to a database and ensuring that it remains consistent with no interferences. Transaction is a logical unit of work that may involve several commands to access/update a database. The system therefore needs to ensure that all elements are executed, once the transaction executes it is said to be ‘committed’ or ‘permanent’. There are a number of problems that could occur could be system failure.
+        <p>All transactions should have ACID properties - <strong>Atomicity</strong> <strong>Isolation</strong>  <strong>Durability</strong></p>
+      </div>
+    </article>
+    <article class="container left">
+      <div class="reflective_content">
+        <a id="WK9"></a>
+        <h1>Week 9</h1>
+        <h2>31/03/20</h2>
+        <p>The learning objectives for this week are to appreciate the importance of security and integrity in databases, the different types of integrity control, common threats, authentication and access to databases. </p>
+        <p>Security refers to the protection of data; ensuring that control are put in place to stop unauthorised access and transactions. Integrity refers to the accuracy or validity of the data; introducing controls to ensure activities users are trying to undertake leave the database in a correct state. There are three types of building integrity into a database: Entity, referential and general data. There is one simple rule of entity integrity, no column of a primary key can contain a null and every value of a primary key is unique. In addition referential is where a foreign key must not contain any unmatched values and general data is where constraints are applied to assist the maintenance of the integrity these include, Unique, not null and check. </p>
+      </div>
+    </article>
+    <article class="container right">
+      <div class="reflective_content">
+        <a id="WK10"></a>
+        <h1>Week 10</h1>
+        <h2>07/04/20</h2>
+        <p>This week’s lecture looked at other options for databases and the movement from legacy databases to native relational ones. Object oriented and relational databases were formed together to create the newest version of databases which are widely used within industry. The combination of these allows for a range of functions but are not widely adopted and have complex manipulation.</p>
+        <p>Data warehouses are an alternative to store large volumes of data and reduce the operating load on databases. These warehouses are integrated subject oriented that can complete complex queries. However, it stores data historically and enables fast and easy decision making. </p>
+        <p>From the lecture I have understood the development in databases and the importance of data warehouses and its functionalities. In addition to this, I has and will support me in the development of my assignment about the different functionalities that are needed for the scenario of Pinkton Hospital. Further reading of this topic is required so that I can gain a deeper understanding of the functionalities of the systems to enhance my academic writing. </p>
+      </div>
+    </article>
+  </section>
+
+
+<!---FOOTER-->
+<footer>
+  <a href="https://www.linkedin.com/in/laurarodwell/" class="fab fa-linkedin"></a>
+  <a href="https://twitter.com/LsaRodwell" class="fab fa-twitter"></a>
+  <a href = "mailto:laura.rodwell@outlook.com" class="far fa-paper-plane"></a>
+  <h2> This website designed and developed by Laura Rodwell &copy; 2020</h2>
+</footer>
+
+
+
+<!--JAVASCRIPT FOR SCROLL TO TOP-->
+<script>      //https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+  //Get the button
+  var mybutton = document.getElementById("topbtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+  </main>
+</body>
+</html>
