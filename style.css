@@ -12,6 +12,8 @@ body{
 nav{
   background: #222930;
   border-bottom: .1em solid #4eb1ba;
+  position: sticky;
+  top: 0;
 }
 nav:after{ /*BRINGS BACKGROUND COLOR AFTER THE NAVBAR*/
   content: '';
