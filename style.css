@@ -1,3 +1,8 @@
+:root {
+  --main_bg: #222930;
+  --highlight: #4eb1ba;
+}
+
 *{
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -5,13 +10,13 @@
 body{
   margin: 0;
   padding: 0;
-  font:1rem/1.5 Arial, Helvetica, sans-serif;
-  background-color:#222930;
+  font: 1rem/1.5 Arial, Helvetica, sans-serif;
+  background-color: var(--main_bg);
 }
 /*****MAIN NAV MENU*****/
 nav{
-  background: #222930;
-  border-bottom: .1em solid #4eb1ba;
+  background: var(--main_bg);
+  border-bottom: .1em solid var(--highlight);
 }
 nav:after{ /*BRINGS BACKGROUND COLOR AFTER THE NAVBAR*/
   content: '';
@@ -34,7 +39,7 @@ nav ul{
 }
 nav ul li{
   float: left;
-  background: #222930;
+  background: var(--main_bg);
   margin: 0 5px;
   z-index: 7;
 }
@@ -45,7 +50,7 @@ nav ul li a{
   padding: 0.5em 0.9em;
 }
 nav ul li a:hover, a:focus{
-  color:#4eb1ba; /*CHANGES COLOR WHEN HOVERED OVER*/
+  color:var(--highlight); /*CHANGES COLOR WHEN HOVERED OVER*/
   border-radius: 0.3em;
   box-shadow:  0 0 5px #33ffff,
                0 0 10px #66ffff;
@@ -88,7 +93,7 @@ nav ul ul ul li{
   display: none; /*NO SHOW BTNS*/
 }
 nav .current{
-  color:#4eb1ba; /*INDICATES THE CURRENT PAGE OF THE USER*/
+  color:var(--highlight); /*INDICATES THE CURRENT PAGE OF THE USER*/
 }
 
 
@@ -111,7 +116,7 @@ nav .current{
 .box_container .box{
   width: 30%; /*SIZE OF BOX*/
   height: auto;
-  background: #222930;
+  background: var(--main_bg);
   margin: 1.25em;
   padding: 1.2em;
   box-shadow: 0px 20px 25px #000;
@@ -140,7 +145,7 @@ nav .current{
   text-transform: uppercase;
   font-weight:500;
   color:#fff;
-  background: #4eb1ba;
+  background: var(--highlight);
   border-radius: 2em;
   margin:1.7em;
   text-decoration: none;
@@ -178,7 +183,7 @@ nav .current{
   padding-left: 2em;
 }
 #about_me{
-  background: #4eb1ba;
+  background: var(--highlight);
   color: #000;
   position: relative;
 }
@@ -214,7 +219,7 @@ nav .current{
 #about_content .bnt_download{
   text-decoration: none;
   color: #fff;
-  background-color: #222930;
+  background-color: var(--main_bg);
   padding: 1.25em 1.37em; /*THCIKNESS OF DOWNLOAD BNT*/
   font-size: 16px;
   font-weight: 700;
@@ -377,7 +382,7 @@ span{
   font-size: 18px;
   border: none;
   outline: none;
-  background-color:#4eb1ba;
+  background-color:var(--highlight);
   color:#000;
   font-weight: 600;
   cursor: pointer;
@@ -407,7 +412,7 @@ span{
 .shortcut a {
   text-decoration: none;
   color:#fff;
-  background-color: #4eb1ba;
+  background-color: var(--highlight);
   padding: .5em;
   margin: .5em;
   border-radius: 1em;
@@ -461,7 +466,7 @@ span{
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #4eb1ba;
+  border: 4px solid var(--highlight);
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -534,7 +539,7 @@ span{
 
 /*****CONTACT SECTION******/
 .contact_section{
-  background: #222930;
+  background: var(--main_bg);
   padding: 50px;
   text-align: center;
   margin:12px;
@@ -555,7 +560,7 @@ span{
 #subject, #email, #message{ /*INPUT FIELDS*/
   background: none;
   border:none;
-  border-bottom: 1px solid #4eb1ba;
+  border-bottom: 1px solid var(--highlight);
   color:#fff;
   padding: 10px 6px;
   font-size: 14px;
@@ -577,7 +582,7 @@ span{
 .contact_section button{
   background: none;
   color: #fff;
-  border:1px solid #4eb1ba;
+  border:1px solid var(--highlight);
   padding: 12px 40px;
   border-radius: 10px;
   text-transform: uppercase;
@@ -590,7 +595,7 @@ span{
   padding:7px;
 }
 .contact_section button:hover{
-  background: #4eb1ba;
+  background: var(--highlight);
   color:#000;
   font-weight: 700;
   letter-spacing: 1px;
@@ -605,7 +610,7 @@ span{
 
 /*FOOTER*/
 footer{
-  background-color: #4eb1ba;
+  background-color: var(--highlight);
   text-align: center;
   padding-top: 10px;
   margin:0;
@@ -621,15 +626,15 @@ footer a {
 }
 footer .fa-linkedin{
   background: none;
-  color: #222930;
+  color: var(--main_bg);
 }
 footer .fa-twitter{
   background: none;
-  color: #222930;
+  color: var(--main_bg);
 }
 footer .fa-paper-plane{
   background: none;
-  color:#222930;
+  color:var(--main_bg);
 }
 footer h2{
   font-size: 10px;
