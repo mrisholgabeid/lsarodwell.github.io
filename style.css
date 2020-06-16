@@ -14,6 +14,23 @@ nav{
   border-bottom: .1em solid #4eb1ba;
   position: sticky;
   top: 0;
+  z-index: 3; 
+  /* 
+   z-index: 3
+	
+   it helps define the location of the positioned element in the hierarchy of positioning	
+   
+   assume there are papers layered on top of each other, the z-index would define which layer each paper should be placed
+   the higher the number of the z-index, the further to the top the page would be and vice verse.
+
+   effectively, if there were 5 pages, the page with z-index of 5 would be first page at the top with the rest appearing
+   below it. in this case, assume the entire website is set to 0 which is the lowest z-index in this hierarchy. by placing
+   the nav element at z-index of 3 places it higher in the hierarchy, hence you would see it first.
+
+   - look at your https://lsarodwell.github.io/digital.html without the z-index first and then add the z-index of 3 and see
+   the difference. let me know what you will notice.
+	
+   */
 }
 nav:after{ /*BRINGS BACKGROUND COLOR AFTER THE NAVBAR*/
   content: '';
